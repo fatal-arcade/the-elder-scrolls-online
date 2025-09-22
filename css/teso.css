@@ -3,14 +3,15 @@
   src: url('../font/planewalker/Planewalker.otf') format('opentype');
 }
 @keyframes bannermotion{
-  0% {background-size: 120%; background-position: bottom center;}
-  50% {background-size: 120%; background-position: top center;}
-  100% {background-size: 120%; background-position: bottom center;}
+  0%    {background-size: 120%; background-position: bottom center;}
+  50%   {background-size: 120%; background-position: top center;}
+  100%  {background-size: 120%; background-position: bottom center;}
 }
 html {
   margin: 0;
   padding: 0;
 }
+
 header{
   padding: 20px;
   width: 100%;
@@ -54,6 +55,22 @@ body {
   margin-top: 10px;
   color:#ffffff;
 }
+
+.mmx{
+  margin:0 auto;
+  width:150px;
+  height:150px;
+  background-image: url("../img/misc/MMXLogo.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 1.0);
+  transform:translateY(40%);
+  border-radius: 50%;
+  background-size: 80%;
+  font-family: 'Plainwalker';
+  color:#ffffff;
+}
+
 .column-mid {
   float: left;
   width: 25%;
@@ -69,20 +86,7 @@ body {
   filter: alpha(opacity=10);
   text-align: center;
 }
-.mmx{
-  margin:0 auto;
-  width:150px;
-  height:150px;
-  background-image: url("../img/misc/MMXLogo.jpg");
-  background-repeat:no-repeat;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 1.0);
-  transform:translateY(40%);
-  border-radius: 50%;
-  background-size: 80%;
-  font-family: 'Plainwalker';
-  color:#ffffff;
-}
+
 .column-left, .column-right {
   float: left;
   width: 40%;
@@ -90,96 +94,43 @@ body {
   transform: translateY(5%);
   background-color: rgba(0, 0, 0, 0.0);
 }
-.mainmenu{
+
+.menu-list {
   padding: 1px;
-  float: right;
-  width: 50%;
-  height: 30%;
+  width:   50%;
+  height:  30%;
   background-color: rgba(0, 0, 0, 1.0);
-  background-image: url("../img/icons/class/dragonknight_icon.png");
   background-repeat: no-repeat;
-  background-position: right;
   border-radius: 50%;
   font-family: 'Plainwalker';
-  text-align: right;
   font-size: 22px;
 }
-.builds{
-  padding: 1px;
+
+.menu-left {
   float: right;
-  width: 50%;
-  height: 30%;
-  background-color: #000000;
-  background-image: url("../img/icons/class/sorcerer_icon.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  border-radius: 50%;
-  font-family: 'Plainwalker';
   text-align: right;
-  font-size: 22px;
-}
-.crafting{
-  padding: 1px;
-  float: right;
-  width: 50%;
-  height: 30%;
-  background-color: #000000;
-  background-image: url("../img/icons/class/templar_icon.png");
-  background-repeat: no-repeat;
   background-position: right;
-  border-radius: 50%;
-  font-family: 'Plainwalker';
-  text-align: right;
-  font-size: 22px;
 }
-.recipe{
-  padding: 1px;
+
+.menu-right {
   float: left;
-  width: 50%;
-  height: 30%;
-  background-color: #000000;
-  background-image: url("../img/icons/class/nightblade_icon.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  border-radius: 50%;
-  font-family: 'Plainwalker';
   text-align: left;
-  font-size: 22px;
-}
-.maps{
-  padding: 1px;
-  float: left;
-  width: 50%;
-  height: 30%;
-  background-color: #000000;
-  background-image: url("../img/icons/class/warden_icon.png");
-  background-repeat: no-repeat;
   background-position: left;
-  border-radius: 50%;
-  font-family: 'Plainwalker';
-  text-align: left;
-  font-size: 22px;
 }
-.notes{
-  padding: 1px;
-  float: left;
-  width: 50%;
-  height: 30%;
-  background-color: #000000;
-  background-image: url("../img/icons/class/necromancer_icon.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  border-radius: 50%;
-  background-size: 22%;
-  font-family: 'Plainwalker';
-  text-align: left;
-  font-size: 22px;
-}
-.greybar{
+
+#mainmenu { background-image: url("../img/icons/class/dragonknight_icon.png"); }
+#builds   { background-image: url("../img/icons/class/sorcerer_icon.png"); }
+#crafting { background-image: url("../img/icons/class/templar_icon.png"); }
+#recipe   { background-image: url("../img/icons/class/nightblade_icon.png"); }
+#maps     { background-image: url("../img/icons/class/warden_icon.png"); }
+#notes    { background-image: url("../img/icons/class/necromancer_icon.png"); }
+
+.greybar  {
   width:100px;
   height: 50px;
   margin: 0 auto;
 }
+
 .main-body{
   width: 90%;
   height: 750px;
